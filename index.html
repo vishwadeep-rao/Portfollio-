@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vishwadeep — Computer Science Engineer, Python Developer, and aspiring full-stack developer." />
+  <title>Vishwadeep | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">V<span class="accent">.</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="section hero">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="hero-greeting reveal">Hello, World — I'm</p>
+          <h1 class="hero-name reveal">
+            <span class="glitch" data-text="VISHWADEEP">VISHWADEEP</span>
+          </h1>
+          <p class="hero-role reveal">
+            <span id="typed-text"></span><span class="cursor-blink">|</span>
+          </p>
+          <p class="hero-desc reveal">
+            B.Tech Computer Science student & Python Developer building
+            intelligent, responsive web experiences with clean code and
+            problem-solving mindset.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Hire Me</a>
+          </div>
+          <div class="hero-stats reveal">
+            <div class="stat">
+              <span class="stat-value" data-count="7.87">0</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" data-count="5">0</span>
+              <span class="stat-label">Core Languages</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" data-count="2">0</span>
+              <span class="stat-label">Major Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-terminal reveal">
+          <div class="terminal" id="terminal">
+            <div class="terminal-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">vishwadeep@portfolio ~ bash</span>
+            </div>
+            <div class="terminal-body" id="terminal-output"></div>
+            <div class="terminal-input-line">
+              <span class="prompt">$</span>
+              <input type="text" id="terminal-input" placeholder="type 'help' for commands..." autocomplete="off" spellcheck="false" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 // About</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <div class="about-avatar">
+              <div class="avatar-ring"></div>
+              <span class="avatar-initials">VR</span>
+            </div>
+            <h3>Vishwadeep</h3>
+            <p class="about-location">📍 Gorakhpur, India</p>
+          </div>
+          <div class="about-content reveal">
+            <p class="about-text">
+              I am a passionate <strong>Computer Science & Engineering</strong> student at AKTU
+              (3rd year, 7.87 CGPA) with a drive to leverage technology, analytical thinking,
+              and leadership to contribute to organizational growth.
+            </p>
+            <p class="about-text">
+              I combine technical expertise with a collaborative mindset and continuous learning
+              to solve real-world problems — from Python backends with Streamlit to responsive
+              front-end interfaces.
+            </p>
+            <div class="about-info-grid">
+              <div class="info-item">
+                <span class="info-label">Email</span>
+                <a href="mailto:vishwadeeprao00@gmail.com">vishwadeeprao00@gmail.com</a>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Phone</span>
+                <a href="tel:+918470941863">+91 8470941863</a>
+              </div>
+              <div class="info-item">
+                <span class="info-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/vishwadeeprao" target="_blank" rel="noopener">vishwadeeprao</a>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Languages</span>
+                <span>Hindi & English</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-grid reveal">
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <h4>B.Tech — Computer Science & Engineering</h4>
+            <p class="edu-school">AKTU</p>
+            <p class="edu-detail">7.87 CGPA (till 5th sem) · 3rd Year</p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon">📚</div>
+            <h4>12th Grade — UP Board</h4>
+            <p class="edu-school">2023</p>
+            <p class="edu-detail">72.2% marks</p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon">📖</div>
+            <h4>10th Grade — UP Board</h4>
+            <p class="edu-school">2021</p>
+            <p class="edu-detail">85.5% marks</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 // Skills</span>
+          <h2 class="section-title">Tech Arsenal</h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-orb reveal" id="skills-orb">
+            <div class="orb-center">CORE</div>
+          </div>
+
+          <div class="skills-panels">
+            <div class="skill-panel reveal">
+              <h3>Technical Skills</h3>
+              <div class="skill-bars">
+                <div class="skill-bar" data-skill="Python" data-level="85">
+                  <div class="skill-info"><span>Python</span><span>85%</span></div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+                <div class="skill-bar" data-skill="C / C++" data-level="80">
+                  <div class="skill-info"><span>C / C++</span><span>80%</span></div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+                <div class="skill-bar" data-skill="HTML / CSS / JS" data-level="82">
+                  <div class="skill-info"><span>HTML / CSS / JS</span><span>82%</span></div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+                <div class="skill-bar" data-skill="MySQL / SQLite" data-level="75">
+                  <div class="skill-info"><span>MySQL / SQLite</span><span>75%</span></div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+                <div class="skill-bar" data-skill="Streamlit" data-level="78">
+                  <div class="skill-info"><span>Streamlit</span><span>78%</span></div>
+                  <div class="skill-track"><div class="skill-fill"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-panel reveal">
+              <h3>Developer Tools</h3>
+              <div class="tool-chips">
+                <span class="chip">VS Code</span>
+                <span class="chip">Git</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">SQLite</span>
+                <span class="chip">Streamlit</span>
+              </div>
+
+              <h3 class="soft-title">Soft Skills</h3>
+              <div class="soft-skills">
+                <div class="soft-skill">
+                  <div class="soft-icon">💬</div>
+                  <span>Communication</span>
+                </div>
+                <div class="soft-skill">
+                  <div class="soft-icon">🎯</div>
+                  <span>Leadership</span>
+                </div>
+                <div class="soft-skill">
+                  <div class="soft-icon">🧩</div>
+                  <span>Problem Solving</span>
+                </div>
+                <div class="soft-skill">
+                  <div class="soft-icon">⏱️</div>
+                  <span>Time Management</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 // Journey</span>
+          <h2 class="section-title">Experience & Roadmap</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker active"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Jul 2025 — Sep 2025</span>
+              <h3>Python Developer Intern</h3>
+              <p class="timeline-company">Codec Technologies Pvt. Ltd.</p>
+              <ul>
+                <li>Mastered Python fundamentals — built-in functions, data types, and core programming concepts</li>
+                <li>Built web applications using Python functions and Streamlit framework</li>
+                <li>Developed data-driven web pages with SQLite & MySQL database integration</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Python</span><span>Streamlit</span><span>MySQL</span><span>SQLite</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker upcoming"></div>
+            <div class="timeline-card upcoming-card">
+              <span class="timeline-date">Oct 2025 — Dec 2025</span>
+              <h3>E-Commerce Automobile Website</h3>
+              <p class="timeline-company">Personal Project</p>
+              <ul>
+                <li>Building a fully responsive, modern web interface for automobile e-commerce</li>
+                <li>Implementing clean UI/UX principles with HTML, CSS, and JavaScript</li>
+                <li>Focus on performance, accessibility, and mobile-first design</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI/UX</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker future"></div>
+            <div class="timeline-card future-card">
+              <span class="timeline-date">2026 →</span>
+              <h3>Full-Stack Developer</h3>
+              <p class="timeline-company">Next Milestone</p>
+              <ul>
+                <li>Expanding into React, Node.js, and cloud deployment</li>
+                <li>Building production-grade applications with end-to-end ownership</li>
+                <li>Contributing to innovative tech teams and open-source projects</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 // Projects</span>
+          <h2 class="section-title">Featured Work</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal" data-tilt>
+            <div class="project-glow"></div>
+            <div class="project-header">
+              <span class="project-status live">Completed</span>
+              <div class="project-links">
+                <a href="#" aria-label="View project" title="Demo coming soon">↗</a>
+              </div>
+            </div>
+            <h3>Python Web Apps with Streamlit</h3>
+            <p>Interactive web applications built during internship — featuring database-backed pages, Python logic, and real-time data display using Streamlit + MySQL/SQLite.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Streamlit</span><span>MySQL</span>
+            </div>
+            <div class="project-overlay">
+              <p>Built during Codec Technologies internship — full-stack Python web development with database integration.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-glow"></div>
+            <div class="project-header">
+              <span class="project-status upcoming">In Progress</span>
+              <div class="project-links">
+                <a href="#" aria-label="View project" title="Demo coming soon">↗</a>
+              </div>
+            </div>
+            <h3>Automobile E-Commerce Platform</h3>
+            <p>A fully responsive, modern automobile e-commerce website with clean UI/UX, smooth animations, and mobile-first responsive design.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-overlay">
+              <p>Modern e-commerce interface focused on automobiles — responsive design with premium UI/UX principles.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-glow"></div>
+            <div class="project-header">
+              <span class="project-status concept">Concept</span>
+              <div class="project-links">
+                <a href="#" aria-label="View project" title="Coming soon">↗</a>
+              </div>
+            </div>
+            <h3>SecondSelf — AI Knowledge Brain</h3>
+            <p>Personal AI second-brain system: capture notes, auto-classify with PARA, auto-link via embeddings, visualize as interactive graph, and query in natural language.</p>
+            <div class="project-tech">
+              <span>Python</span><span>LLM</span><span>Streamlit</span>
+            </div>
+            <div class="project-overlay">
+              <p>End-to-end knowledge management — capture → classify → link → visualize → ask anything.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 // Contact</span>
+          <h2 class="section-title">Let's Build Together</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-text">
+              I'm open to internships, freelance projects, and full-time opportunities.
+              Let's connect and build something extraordinary.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:vishwadeeprao00@gmail.com" class="contact-link">
+                <span class="contact-icon">✉</span>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <span>vishwadeeprao00@gmail.com</span>
+                </div>
+              </a>
+              <a href="tel:+918470941863" class="contact-link">
+                <span class="contact-icon">📱</span>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <span>+91 8470941863</span>
+                </div>
+              </a>
+              <a href="https://linkedin.com/in/vishwadeeprao" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-icon">🔗</span>
+                <div>
+                  <span class="contact-label">LinkedIn</span>
+                  <span>linkedin.com/in/vishwadeeprao</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder=" " required />
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder=" " required />
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <span class="btn-glow"></span>
+            </button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed & Built by <span class="accent">Vishwadeep</span> · 2026</p>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
