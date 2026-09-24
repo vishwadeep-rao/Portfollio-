@@ -1,6 +1,6 @@
 # Vishwadeep — Portfolio Website
 
-A futuristic, interactive, animated portfolio built from Vishwadeep's resume.
+A futuristic, interactive, animated portfolio built by Vishwadeep's resume.
 
 ## Features
 
@@ -29,17 +29,15 @@ python -m http.server 8080
 
 Then open http://localhost:8080
 
-## Structure
 
 ```
 portfolio/
-├── index.html      # Main page
-├── css/style.css   # Futuristic styling
-├── js/main.js      # Animations, terminal, particles
+├── index.html      
+├── css/style.css   
+├── js/main.js      
 └── README.md
 ```
 
-## Terminal Commands
 
 | Command      | Description        |
 |-------------|--------------------|
@@ -52,7 +50,6 @@ portfolio/
 | `whoami`    | Quick intro        |
 | `clear`     | Clear terminal     |
 
-## Deploy (Free)
 
 Upload the `portfolio/` folder to:
 - **GitHub Pages** — push to repo, enable Pages on `main` branch
